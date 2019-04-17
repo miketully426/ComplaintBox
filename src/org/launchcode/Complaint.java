@@ -19,17 +19,38 @@ public class Complaint {
         this.closed = false;
     }
 
+    public Complainant getComplainant() {
+        return complainant;
+    }
+
+    public void setComplainant(Complainant complainant) {
+        this.complainant = complainant;
+    }
+
+    public String getComplaintTitle() {
+        return complaintTitle;
+    }
+
+    public void setComplaintTitle(String complaintTitle) {
+        this.complaintTitle = complaintTitle;
+    }
+
+    public String getComplaintText() {
+        return complaintText;
+    }
+
+    public void setComplaintText(String complaintText) {
+        this.complaintText = complaintText;
+    }
+    
     private String checkStatus(){
         return closed ? "Yes" : "No";
     }
 
+    //TODO Create the toString method
     @Override
     public String toString(){
-        return "Complainant: " + this.complainant.getName()+"\n"+
-        "Contact Number: " + this.complainant.getPhoneNumber() + "\n" +
-        this.complaintTitle + "\n" +
-        "Complaint: " + this.complaintText +"\n"+
-                "Closed: " + checkStatus();
+        return "";
     }
 
 

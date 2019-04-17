@@ -23,14 +23,12 @@ public class ComplaintGenerator {
         return newComplaint;
     }
 
+    //TODO Get the complainant info from the user
     private Complainant createComplainant(){
-        System.out.println("Who are you?");
-        String name = keyboard.nextLine();
-        System.out.println("What phone number can we get back to you at?");
-        String phoneNumber = keyboard.nextLine();
-        return new Complainant(name, phoneNumber);
+        return new Complainant("", "");
     }
 
+    //TODO Change this to store each value in the correct field as it is entered
     public Complaint createComplaint(Complainant complainant){
         System.out.println("How would you like to title your complaint?");
         String title = keyboard.nextLine();

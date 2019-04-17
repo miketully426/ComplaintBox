@@ -34,12 +34,13 @@ public class ComplaintMenu {
     private void welcome() {
         System.out.println("Hello! Welcome to the Complaints Department!");
     }
+
+    //TODO Add new complaints to the log
     private void processSelection(int selection) {
         switch (selection){
             case 1:
                 ComplaintGenerator complaintGenerator = new ComplaintGenerator();
                 Complaint complaint = complaintGenerator.generateComplaint();
-                this.complaintLog.add(complaint);
                 break;
             case 2:
                 viewComplaints();
