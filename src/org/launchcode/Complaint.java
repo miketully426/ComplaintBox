@@ -12,6 +12,7 @@ public class Complaint {
     private boolean closed;
 
     public Complaint (Complainant complainant, String complaintTitle, String complaintText) {
+        complaintCount++;
         this.id = complaintCount;
         this.complainant = complainant;
         this.complaintTitle = complaintTitle;
