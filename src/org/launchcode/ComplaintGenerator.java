@@ -24,18 +24,21 @@ public class ComplaintGenerator {
     }
 
     private Complainant createComplainant(){
+        Complainant complainant = new Complainant();
         System.out.println("Who are you?");
-        String name = keyboard.nextLine();
+        complainant.setName(keyboard.nextLine());
         System.out.println("What phone number can we get back to you at?");
-        String phoneNumber = keyboard.nextLine();
-        return new Complainant(name, phoneNumber);
+        complainant.setPhoneNumber(keyboard.nextLine());
+        return complainant;
     }
 
     public Complaint createComplaint(Complainant complainant){
+        Complaint complaint = new Complaint();
+        complaint.setComplainant(complainant);
         System.out.println("How would you like to title your complaint?");
-        String title = keyboard.nextLine();
+        complaint.setComplaintTitle(keyboard.nextLine());
         System.out.println("What is your complaint?");
-        String complaintText = keyboard.nextLine();
-        return new Complaint(complainant, title, complaintText);
+        complaint.setComplaintText(keyboard.nextLine());
+        return complaint;
     }
 }
