@@ -1,11 +1,11 @@
 package org.launchcode;
 
-public class Complaintant {
+public class Complainant {
 
     private String name;
     private String phoneNumber;
 
-    public Complaintant (String name, String phoneNumber) {
+    public Complainant (String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
